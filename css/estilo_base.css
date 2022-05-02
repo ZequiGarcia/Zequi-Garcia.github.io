@@ -1,0 +1,138 @@
+/*Estilos generales*/
+body{
+	background: white;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: arial;
+}
+/*Estilos para el menu*/
+
+.nav{
+	border-bottom: 1px solid lightblue;
+	text-align: right;
+	height: 70px;
+	line-height: 70px;
+}
+
+.nav img{
+	float: left;
+	width: 100px;
+	margin-left: 5%;
+}
+
+.menu{
+	margin: 0;
+	background: #0c6097;
+}
+
+.menu a{
+	clear: right;
+	text-decoration: none;
+	color: white;
+	margin: 0 10px;
+	font-size: 1.5em;
+	line-height: 70px;
+}
+
+.menu a:hover{
+	color: gold;
+}
+
+label{
+	margin: 0 40px 0 0 ;
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	float: right;
+}
+
+#toggle{
+	display: none;
+}
+/*Estilos para cuerpo*/
+
+/*Estilos para el footer*/
+footer{
+	width: 100%;
+	height: 120px;
+	background: black;
+	margin-top: 466px;
+}
+
+footer img{
+	width: 50px;
+	margin: 0;
+	margin-left: 15px;
+}
+
+.pie{
+	text-align: left;
+}
+
+.pie a{
+	color: white;
+	cursor: pointer;
+}
+
+.Contacto{
+	float: right;
+	border-left: 2px solid gold;
+	color: white;
+	margin-right: 15%;
+}
+
+@media only screen and (max-width: 768px) {
+/*Media Para tablet y cel*/
+/*Estilos para menu*/
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        background: #0c6097;
+        margin: 0;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+     
+    }
+    .menu a:hover{
+    	background: #12a1fa;
+    	color: #140f07;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    
+    /*Estilos para el cuerpo*/
+
+
+    /*Estilos para el footer*/
+    .pie{
+    text-align: center;
+	}
+
+    .pie a{
+	color: white;
+	cursor: pointer;
+	}
+
+	.Contacto{
+		float: left;
+		color: white;
+		width: 100%;
+		text-align: center;
+		margin-right: 0%;
+		margin-top: 40px;
+		border: 2px solid gold;
+		background: black;
+	}
+
+}
